@@ -1,0 +1,6 @@
+framework module CommonApp {
+  umbrella header "CommonApp-umbrella.h"
+
+  export *
+  module * { export * }
+}
