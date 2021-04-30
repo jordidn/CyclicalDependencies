@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Login View Controller-->
+        <scene sceneID="7s1-aR-1r2">
+            <objects>
+                <viewController storyboardIdentifier="LoginViewController" id="fM6-sg-Dr7" customClass="LoginViewController" customModule="OldApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="72O-Ku-rjL">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="15" translatesAutoresizingMaskIntoConstraints="NO" id="Rig-yb-BdW">
+                                <rect key="frame" x="20" y="416" width="374" height="74"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Login (OldApp)" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4oe-Em-ZJ9">
+                                        <rect key="frame" x="0.0" y="0.0" width="374" height="29"/>
+                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="24"/>
+                                        <color key="textColor" systemColor="systemRedColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6nM-3h-OOv">
+                                        <rect key="frame" x="0.0" y="44" width="374" height="30"/>
+                                        <state key="normal" title="Open Newsletter (NewApp)"/>
+                                        <connections>
+                                            <action selector="openNewsletterButtonAction:" destination="fM6-sg-Dr7" eventType="touchUpInside" id="bDM-hK-mLn"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="rWi-WO-jOw"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="Rig-yb-BdW" firstAttribute="centerY" secondItem="rWi-WO-jOw" secondAttribute="centerY" id="CfB-Vy-5nH"/>
+                            <constraint firstItem="Rig-yb-BdW" firstAttribute="top" relation="greaterThanOrEqual" secondItem="rWi-WO-jOw" secondAttribute="top" constant="20" id="Tf5-Vi-QiF"/>
+                            <constraint firstItem="Rig-yb-BdW" firstAttribute="leading" secondItem="rWi-WO-jOw" secondAttribute="leading" constant="20" id="Z0T-HN-Ix6"/>
+                            <constraint firstItem="rWi-WO-jOw" firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="Rig-yb-BdW" secondAttribute="bottom" constant="20" id="Z2d-CJ-RSu"/>
+                            <constraint firstItem="rWi-WO-jOw" firstAttribute="trailing" secondItem="Rig-yb-BdW" secondAttribute="trailing" constant="20" id="v9W-mo-qCU"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="stackView" destination="Rig-yb-BdW" id="FqV-xI-y9j"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Nat-ry-S3N" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-339" y="100"/>
+        </scene>
+    </scenes>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemRedColor">
+            <color red="1" green="0.23137254901960785" blue="0.18823529411764706" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>
