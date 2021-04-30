@@ -1,0 +1,22 @@
+PODS:
+  - CommonApp (0.1.0)
+  - NewApp (0.1.0):
+    - CommonApp
+
+DEPENDENCIES:
+  - CommonApp (from `../CommonApp`)
+  - NewApp (from `../NewApp`)
+
+EXTERNAL SOURCES:
+  CommonApp:
+    :path: "../CommonApp"
+  NewApp:
+    :path: "../NewApp"
+
+SPEC CHECKSUMS:
+  CommonApp: 303a1d69f42514157258b911536c2a1c3044157b
+  NewApp: 7e61050c4b7218255a4446b7d23c1b9b58bb91a0
+
+PODFILE CHECKSUM: 542923b4fd30924d6020876171c953c1ad6ec1d4
+
+COCOAPODS: 1.10.0

@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Newsletter View Controller-->
+        <scene sceneID="6e3-mf-IDh">
+            <objects>
+                <viewController storyboardIdentifier="NewsletterViewController" id="0Jl-Df-huZ" customClass="NewsletterViewController" customModule="NewApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="nF1-mr-gum">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="15" translatesAutoresizingMaskIntoConstraints="NO" id="yMB-sM-9ha">
+                                <rect key="frame" x="20" y="416" width="374" height="74"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Newsletter (NewApp)" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LKO-Ib-OJn">
+                                        <rect key="frame" x="0.0" y="0.0" width="374" height="29"/>
+                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="24"/>
+                                        <color key="textColor" systemColor="systemGreenColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tO1-Dp-ufC" userLabel="CloseModal">
+                                        <rect key="frame" x="0.0" y="44" width="374" height="30"/>
+                                        <state key="normal" title="Close modal"/>
+                                        <connections>
+                                            <action selector="closeModalButton:" destination="0Jl-Df-huZ" eventType="touchUpInside" id="Yvw-Gt-MOk"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="YHg-vV-VA9"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="yMB-sM-9ha" firstAttribute="top" relation="greaterThanOrEqual" secondItem="YHg-vV-VA9" secondAttribute="top" constant="20" id="LZQ-mw-QNt"/>
+                            <constraint firstItem="yMB-sM-9ha" firstAttribute="centerY" secondItem="YHg-vV-VA9" secondAttribute="centerY" id="UWF-wG-fr2"/>
+                            <constraint firstItem="yMB-sM-9ha" firstAttribute="leading" secondItem="YHg-vV-VA9" secondAttribute="leading" constant="20" id="eGN-81-1A4"/>
+                            <constraint firstItem="YHg-vV-VA9" firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="yMB-sM-9ha" secondAttribute="bottom" constant="20" id="h73-dI-68o"/>
+                            <constraint firstItem="YHg-vV-VA9" firstAttribute="trailing" secondItem="yMB-sM-9ha" secondAttribute="trailing" constant="20" id="joH-pf-iKR"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="xdj-Td-tUD" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-207" y="147"/>
+        </scene>
+    </scenes>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemGreenColor">
+            <color red="0.20392156862745098" green="0.7803921568627451" blue="0.34901960784313724" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>

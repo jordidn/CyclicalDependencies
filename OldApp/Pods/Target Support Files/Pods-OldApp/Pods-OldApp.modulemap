@@ -1,0 +1,6 @@
+framework module Pods_OldApp {
+  umbrella header "Pods-OldApp-umbrella.h"
+
+  export *
+  module * { export * }
+}
