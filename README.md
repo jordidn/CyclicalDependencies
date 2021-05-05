@@ -12,6 +12,7 @@ Thanks to CommonApp we can register OldApp and NewApp UIViewControllers for thei
 <br>
 Additionally, through protocol, we can pass information to said ViewControllers without having visibility of their classes.
 <br>
+<br>
 
 **We can register and recover:**
 - ViewControllers
