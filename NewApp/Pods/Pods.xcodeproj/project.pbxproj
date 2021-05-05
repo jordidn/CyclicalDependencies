@@ -8,17 +8,20 @@
 
 /* Begin PBXBuildFile section */
 		04B5206D1AC03CD7D57788878528C46A /* Pods-NewApp-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 1E207BFC57FF099C5D44CF202C0BA601 /* Pods-NewApp-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		1078308E17ED6B810818C602C8E99ADC /* CommonApp-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 5BDD6AFC56AE185FF1843B5C35943AC6 /* CommonApp-dummy.m */; };
-		3D86BC8AF5F81D928A5740DFC213330A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */; };
-		456DB9759F3A4DB5D1A5F054B5C29648 /* IntegrationLayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48F3076BCE359DECC520476637AB810B /* IntegrationLayer.swift */; };
+		0F1DDEAED0AE4D86A12CE810FEF56353 /* IntegrationLayerModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 281A1572B9F742FC5ED35772C92EFD7A /* IntegrationLayerModel.swift */; };
+		26BB3042890B96267E508C24FFC9E330 /* IntegrationLayerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDCA77D998749A6D4F4753EA41475111 /* IntegrationLayerViewController.swift */; };
+		4B42653BC9907066707B4C623B13CDB8 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */; };
 		4B8169A2BE7FE5C09E4FB86216803693 /* Pods-NewApp-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = A0636D8F06A23CA76937F017B322EA0D /* Pods-NewApp-dummy.m */; };
+		A9E70E05E0F250BA0B8176F2452A4082 /* CommonApp-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 9809D7E6754A61D2289AA47D1A390191 /* CommonApp-dummy.m */; };
+		A9F65B29C756CF9CAC310CD12462A502 /* CMNewsletter.swift in Sources */ = {isa = PBXBuildFile; fileRef = B23E8A4B9B483DBE15C877B3ABF9C589 /* CMNewsletter.swift */; };
 		ABA673ADE70DABCD392ECF3C84D14F6B /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */; };
-		D8C531DFC2DD8533CBAC195953647750 /* CommonApp-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 070622686201037A0706F6D5173386CA /* CommonApp-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		FD16659D7A6900F1520BBC5469D22160 /* CMNewsletter.swift in Sources */ = {isa = PBXBuildFile; fileRef = E35C1064F95D16A3CCA45406AEBEA72B /* CMNewsletter.swift */; };
+		ADB208438BD1809DD6D4E36FF062AAC4 /* CMLogin.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E4CF5F1B67B197E67C38B5AF40FA003 /* CMLogin.swift */; };
+		BE1459B65ECE4F87D4C85FF9900AA32A /* IntegrationLayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC93292FF0BB16F58091DA0E4519A422 /* IntegrationLayer.swift */; };
+		DA4855DB6E0072DB4E62F778A253EAE3 /* CommonApp-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = DFE7B54085313926C1F5A972EF1C083C /* CommonApp-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		8F41F4C290E1E824A2193D5DFAFA0963 /* PBXContainerItemProxy */ = {
+		3BC5159F38931DC48C8DF77D08FDB273 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
 			proxyType = 1;
@@ -28,40 +31,35 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		070622686201037A0706F6D5173386CA /* CommonApp-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "CommonApp-umbrella.h"; sourceTree = "<group>"; };
-		0B6B5B46BCAE90FDDA2284D62C09C43E /* CommonApp.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = CommonApp.modulemap; sourceTree = "<group>"; };
+		074604D053091B6C7A510DABA28EF2DA /* CommonApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = CommonApp.release.xcconfig; sourceTree = "<group>"; };
 		0EADCED8F04A33E0127FD7D7BB553AC3 /* Pods-NewApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-NewApp.debug.xcconfig"; sourceTree = "<group>"; };
 		1E207BFC57FF099C5D44CF202C0BA601 /* Pods-NewApp-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-NewApp-umbrella.h"; sourceTree = "<group>"; };
 		1EF30EEDE192E1D490FFA84B6A3F12B8 /* Pods_NewApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_NewApp.framework; path = "Pods-NewApp.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
-		48F3076BCE359DECC520476637AB810B /* IntegrationLayer.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = IntegrationLayer.swift; sourceTree = "<group>"; };
-		4960DD7D9024FAF1EB5EC06665E78986 /* CommonApp-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "CommonApp-prefix.pch"; sourceTree = "<group>"; };
-		5BDD6AFC56AE185FF1843B5C35943AC6 /* CommonApp-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "CommonApp-dummy.m"; sourceTree = "<group>"; };
+		281A1572B9F742FC5ED35772C92EFD7A /* IntegrationLayerModel.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = IntegrationLayerModel.swift; sourceTree = "<group>"; };
+		5B1966C1BDA322EF6613233DC0F75A33 /* CommonApp-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "CommonApp-prefix.pch"; sourceTree = "<group>"; };
+		6059ACA398362B2D7514807C1C091803 /* CommonApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = CommonApp.debug.xcconfig; sourceTree = "<group>"; };
 		6472E546FE693BCE3C7B349B3D95EFC8 /* Pods-NewApp-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-NewApp-acknowledgements.plist"; sourceTree = "<group>"; };
+		6AD07366C9EA9EFC5BE5CF3C903B74AC /* CommonApp.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; path = CommonApp.podspec; sourceTree = "<group>"; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS14.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
 		8D90A5887EB3B305411426EB0F067242 /* CommonApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = CommonApp.framework; path = CommonApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		8E4CF5F1B67B197E67C38B5AF40FA003 /* CMLogin.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = CMLogin.swift; sourceTree = "<group>"; };
+		9809D7E6754A61D2289AA47D1A390191 /* CommonApp-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "CommonApp-dummy.m"; sourceTree = "<group>"; };
 		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		A0636D8F06A23CA76937F017B322EA0D /* Pods-NewApp-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-NewApp-dummy.m"; sourceTree = "<group>"; };
-		A48101B31E1767F0C0401E15BC915B13 /* CommonApp.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; path = CommonApp.podspec; sourceTree = "<group>"; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		A4A867D72FE6C933E7FA8AB3179690F8 /* Pods-NewApp-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-NewApp-frameworks.sh"; sourceTree = "<group>"; };
 		A87E426847F9060C9FBEC5F523C9CF92 /* Pods-NewApp-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-NewApp-acknowledgements.markdown"; sourceTree = "<group>"; };
-		D7A362DA1C0D110241FFF9EEA1398837 /* CommonApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = CommonApp.debug.xcconfig; sourceTree = "<group>"; };
-		D9FABF649EE49770EDC35B13806A8411 /* CommonApp-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "CommonApp-Info.plist"; sourceTree = "<group>"; };
-		E35C1064F95D16A3CCA45406AEBEA72B /* CMNewsletter.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = CMNewsletter.swift; sourceTree = "<group>"; };
+		AC93292FF0BB16F58091DA0E4519A422 /* IntegrationLayer.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = IntegrationLayer.swift; sourceTree = "<group>"; };
+		B23E8A4B9B483DBE15C877B3ABF9C589 /* CMNewsletter.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = CMNewsletter.swift; sourceTree = "<group>"; };
+		B8EAD84DA948FAEE29AC401291A915E5 /* CommonApp.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = CommonApp.modulemap; sourceTree = "<group>"; };
+		CE723FC1D03B512A71C9271CADEED9A9 /* CommonApp-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "CommonApp-Info.plist"; sourceTree = "<group>"; };
+		DFE7B54085313926C1F5A972EF1C083C /* CommonApp-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "CommonApp-umbrella.h"; sourceTree = "<group>"; };
 		E666AF6670C8DCB64FD566F568C54E05 /* Pods-NewApp.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-NewApp.modulemap"; sourceTree = "<group>"; };
 		E8C6F52D38832EAF40EA73C54839D99D /* Pods-NewApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-NewApp.release.xcconfig"; sourceTree = "<group>"; };
+		EDCA77D998749A6D4F4753EA41475111 /* IntegrationLayerViewController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = IntegrationLayerViewController.swift; sourceTree = "<group>"; };
 		F4016145D68DFDE8923F9ABB6AE2FFB0 /* Pods-NewApp-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-NewApp-Info.plist"; sourceTree = "<group>"; };
-		FE15DF05E23A00D782930BEEC1211655 /* CommonApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = CommonApp.release.xcconfig; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		2DF84D2C05427B0EEAD516C7732F6D5C /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				3D86BC8AF5F81D928A5740DFC213330A /* Foundation.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		476224B68B9D8158DEC61E32C70843CD /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -70,24 +68,31 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		BD67E94BF302DDE3E36D6A9E94DEA053 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4B42653BC9907066707B4C623B13CDB8 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		05801C78B4178F6992A6BAFAEA1B7C1B /* Pod */ = {
+			isa = PBXGroup;
+			children = (
+				6AD07366C9EA9EFC5BE5CF3C903B74AC /* CommonApp.podspec */,
+			);
+			name = Pod;
+			sourceTree = "<group>";
+		};
 		253AB4818AD3683441E33D77EC58B1E2 /* Targets Support Files */ = {
 			isa = PBXGroup;
 			children = (
 				B1075F7E5B3B8C6EBF95A5F0824E662C /* Pods-NewApp */,
 			);
 			name = "Targets Support Files";
-			sourceTree = "<group>";
-		};
-		295C9BC1241C698202AA1C62CAD2AAB6 /* Features */ = {
-			isa = PBXGroup;
-			children = (
-				72C3864F99565C45845CC02D07897BDA /* CommonNewsletter */,
-			);
-			name = Features;
-			path = CommonApp/Features;
 			sourceTree = "<group>";
 		};
 		578452D2E740E91742655AC8F1636D1F /* iOS */ = {
@@ -98,12 +103,26 @@
 			name = iOS;
 			sourceTree = "<group>";
 		};
-		6BEA4775372EBFE0A17010420AABAF68 /* Pod */ = {
+		696DCDCA283C5546C49716119A547465 /* CommonApp */ = {
 			isa = PBXGroup;
 			children = (
-				A48101B31E1767F0C0401E15BC915B13 /* CommonApp.podspec */,
+				6B96F24893ECB54215D62300A337C85F /* Features */,
+				C02C84C10CFEE5CED62716092B6F82BB /* IntegrationLayer */,
+				05801C78B4178F6992A6BAFAEA1B7C1B /* Pod */,
+				9A0748C198CC147BBD9873715527AA8E /* Support Files */,
 			);
-			name = Pod;
+			name = CommonApp;
+			path = ../../CommonApp;
+			sourceTree = "<group>";
+		};
+		6B96F24893ECB54215D62300A337C85F /* Features */ = {
+			isa = PBXGroup;
+			children = (
+				B88C656770058C7F42DFA17C8F87D9B3 /* CommonLogin */,
+				F217BDFB54A556548322478F8792A108 /* CommonNewsletter */,
+			);
+			name = Features;
+			path = CommonApp/Features;
 			sourceTree = "<group>";
 		};
 		6D5A9B242299D3147217CD0A08BFDD2C /* Products */ = {
@@ -115,42 +134,27 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
-		6DF0A429D5A0A9F6CA904257781A37B0 /* CommonApp */ = {
-			isa = PBXGroup;
-			children = (
-				295C9BC1241C698202AA1C62CAD2AAB6 /* Features */,
-				ABF16453E5610F3FB7E2599CEE7FBEF5 /* IntegrationLayer */,
-				6BEA4775372EBFE0A17010420AABAF68 /* Pod */,
-				E8087ADBA43C30964E0050F4988382FF /* Support Files */,
-			);
-			name = CommonApp;
-			path = ../../CommonApp;
-			sourceTree = "<group>";
-		};
-		72C3864F99565C45845CC02D07897BDA /* CommonNewsletter */ = {
-			isa = PBXGroup;
-			children = (
-				E35C1064F95D16A3CCA45406AEBEA72B /* CMNewsletter.swift */,
-			);
-			name = CommonNewsletter;
-			path = CommonNewsletter;
-			sourceTree = "<group>";
-		};
 		96C2AB1DCB6A3A886774AE241B7E6DC3 /* Development Pods */ = {
 			isa = PBXGroup;
 			children = (
-				6DF0A429D5A0A9F6CA904257781A37B0 /* CommonApp */,
+				696DCDCA283C5546C49716119A547465 /* CommonApp */,
 			);
 			name = "Development Pods";
 			sourceTree = "<group>";
 		};
-		ABF16453E5610F3FB7E2599CEE7FBEF5 /* IntegrationLayer */ = {
+		9A0748C198CC147BBD9873715527AA8E /* Support Files */ = {
 			isa = PBXGroup;
 			children = (
-				48F3076BCE359DECC520476637AB810B /* IntegrationLayer.swift */,
+				B8EAD84DA948FAEE29AC401291A915E5 /* CommonApp.modulemap */,
+				9809D7E6754A61D2289AA47D1A390191 /* CommonApp-dummy.m */,
+				CE723FC1D03B512A71C9271CADEED9A9 /* CommonApp-Info.plist */,
+				5B1966C1BDA322EF6613233DC0F75A33 /* CommonApp-prefix.pch */,
+				DFE7B54085313926C1F5A972EF1C083C /* CommonApp-umbrella.h */,
+				6059ACA398362B2D7514807C1C091803 /* CommonApp.debug.xcconfig */,
+				074604D053091B6C7A510DABA28EF2DA /* CommonApp.release.xcconfig */,
 			);
-			name = IntegrationLayer;
-			path = CommonApp/IntegrationLayer;
+			name = "Support Files";
+			path = "../NewApp/Pods/Target Support Files/CommonApp";
 			sourceTree = "<group>";
 		};
 		B1075F7E5B3B8C6EBF95A5F0824E662C /* Pods-NewApp */ = {
@@ -168,6 +172,26 @@
 			);
 			name = "Pods-NewApp";
 			path = "Target Support Files/Pods-NewApp";
+			sourceTree = "<group>";
+		};
+		B88C656770058C7F42DFA17C8F87D9B3 /* CommonLogin */ = {
+			isa = PBXGroup;
+			children = (
+				8E4CF5F1B67B197E67C38B5AF40FA003 /* CMLogin.swift */,
+			);
+			name = CommonLogin;
+			path = CommonLogin;
+			sourceTree = "<group>";
+		};
+		C02C84C10CFEE5CED62716092B6F82BB /* IntegrationLayer */ = {
+			isa = PBXGroup;
+			children = (
+				AC93292FF0BB16F58091DA0E4519A422 /* IntegrationLayer.swift */,
+				281A1572B9F742FC5ED35772C92EFD7A /* IntegrationLayerModel.swift */,
+				EDCA77D998749A6D4F4753EA41475111 /* IntegrationLayerViewController.swift */,
+			);
+			name = IntegrationLayer;
+			path = CommonApp/IntegrationLayer;
 			sourceTree = "<group>";
 		};
 		CF1408CF629C7361332E53B88F7BD30C = {
@@ -189,37 +213,31 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		E8087ADBA43C30964E0050F4988382FF /* Support Files */ = {
+		F217BDFB54A556548322478F8792A108 /* CommonNewsletter */ = {
 			isa = PBXGroup;
 			children = (
-				0B6B5B46BCAE90FDDA2284D62C09C43E /* CommonApp.modulemap */,
-				5BDD6AFC56AE185FF1843B5C35943AC6 /* CommonApp-dummy.m */,
-				D9FABF649EE49770EDC35B13806A8411 /* CommonApp-Info.plist */,
-				4960DD7D9024FAF1EB5EC06665E78986 /* CommonApp-prefix.pch */,
-				070622686201037A0706F6D5173386CA /* CommonApp-umbrella.h */,
-				D7A362DA1C0D110241FFF9EEA1398837 /* CommonApp.debug.xcconfig */,
-				FE15DF05E23A00D782930BEEC1211655 /* CommonApp.release.xcconfig */,
+				B23E8A4B9B483DBE15C877B3ABF9C589 /* CMNewsletter.swift */,
 			);
-			name = "Support Files";
-			path = "../NewApp/Pods/Target Support Files/CommonApp";
+			name = CommonNewsletter;
+			path = CommonNewsletter;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
-		582981B304AA0202233F887398120C24 /* Headers */ = {
-			isa = PBXHeadersBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				D8C531DFC2DD8533CBAC195953647750 /* CommonApp-umbrella.h in Headers */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		BAE8C0F12783B3D01AAEF6A7D847595E /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				04B5206D1AC03CD7D57788878528C46A /* Pods-NewApp-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F726EE85B8D816E8CB9F0E7866208A54 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DA4855DB6E0072DB4E62F778A253EAE3 /* CommonApp-umbrella.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -238,7 +256,7 @@
 			buildRules = (
 			);
 			dependencies = (
-				532F3C4B276A5AF6FB13DC8E859EF618 /* PBXTargetDependency */,
+				8CC3D359382E32A1989E2248E3348BF5 /* PBXTargetDependency */,
 			);
 			name = "Pods-NewApp";
 			productName = "Pods-NewApp";
@@ -247,12 +265,12 @@
 		};
 		54E138DABA3558D768328E150CEF7FB2 /* CommonApp */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = AC55FBB4E34E376FA5530904948B6BC0 /* Build configuration list for PBXNativeTarget "CommonApp" */;
+			buildConfigurationList = 692C29CDE675AD284DA2F9C20F0669B0 /* Build configuration list for PBXNativeTarget "CommonApp" */;
 			buildPhases = (
-				582981B304AA0202233F887398120C24 /* Headers */,
-				246BAEF6886FECF564E89EF44216292B /* Sources */,
-				2DF84D2C05427B0EEAD516C7732F6D5C /* Frameworks */,
-				2392AD1257EE6B4066FED44EE265F074 /* Resources */,
+				F726EE85B8D816E8CB9F0E7866208A54 /* Headers */,
+				821D0D009BF6A715151BE484F9A0FE43 /* Sources */,
+				BD67E94BF302DDE3E36D6A9E94DEA053 /* Frameworks */,
+				4926698A896476797A5EEEC18503CE31 /* Resources */,
 			);
 			buildRules = (
 			);
@@ -292,7 +310,7 @@
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		2392AD1257EE6B4066FED44EE265F074 /* Resources */ = {
+		4926698A896476797A5EEEC18503CE31 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -309,13 +327,16 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		246BAEF6886FECF564E89EF44216292B /* Sources */ = {
+		821D0D009BF6A715151BE484F9A0FE43 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				FD16659D7A6900F1520BBC5469D22160 /* CMNewsletter.swift in Sources */,
-				1078308E17ED6B810818C602C8E99ADC /* CommonApp-dummy.m in Sources */,
-				456DB9759F3A4DB5D1A5F054B5C29648 /* IntegrationLayer.swift in Sources */,
+				ADB208438BD1809DD6D4E36FF062AAC4 /* CMLogin.swift in Sources */,
+				A9F65B29C756CF9CAC310CD12462A502 /* CMNewsletter.swift in Sources */,
+				A9E70E05E0F250BA0B8176F2452A4082 /* CommonApp-dummy.m in Sources */,
+				BE1459B65ECE4F87D4C85FF9900AA32A /* IntegrationLayer.swift in Sources */,
+				0F1DDEAED0AE4D86A12CE810FEF56353 /* IntegrationLayerModel.swift in Sources */,
+				26BB3042890B96267E508C24FFC9E330 /* IntegrationLayerViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -330,11 +351,11 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		532F3C4B276A5AF6FB13DC8E859EF618 /* PBXTargetDependency */ = {
+		8CC3D359382E32A1989E2248E3348BF5 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = CommonApp;
 			target = 54E138DABA3558D768328E150CEF7FB2 /* CommonApp */;
-			targetProxy = 8F41F4C290E1E824A2193D5DFAFA0963 /* PBXContainerItemProxy */;
+			targetProxy = 3BC5159F38931DC48C8DF77D08FDB273 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -376,6 +397,41 @@
 				VERSION_INFO_PREFIX = "";
 			};
 			name = Release;
+		};
+		3EAA76D8759D26E05B3CEFDBD116E0CA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6059ACA398362B2D7514807C1C091803 /* CommonApp.debug.xcconfig */;
+			buildSettings = {
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/CommonApp/CommonApp-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/CommonApp/CommonApp-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/CommonApp/CommonApp.modulemap";
+				PRODUCT_MODULE_NAME = CommonApp;
+				PRODUCT_NAME = CommonApp;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
 		};
 		3EFA7F5BA641869C4DC4F7144E2BB272 /* Debug */ = {
 			isa = XCBuildConfiguration;
@@ -542,44 +598,9 @@
 			};
 			name = Release;
 		};
-		CCC79F0819D26AFFDE708E2DFB9DD3A9 /* Debug */ = {
+		FDAA5D313EA95D3D7FAD2E5B1363E815 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = D7A362DA1C0D110241FFF9EEA1398837 /* CommonApp.debug.xcconfig */;
-			buildSettings = {
-				CLANG_ENABLE_OBJC_WEAK = NO;
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				GCC_PREFIX_HEADER = "Target Support Files/CommonApp/CommonApp-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/CommonApp/CommonApp-Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				MODULEMAP_FILE = "Target Support Files/CommonApp/CommonApp.modulemap";
-				PRODUCT_MODULE_NAME = CommonApp;
-				PRODUCT_NAME = CommonApp;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Debug;
-		};
-		CEF227D804E280BA844BB55153932DA3 /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = FE15DF05E23A00D782930BEEC1211655 /* CommonApp.release.xcconfig */;
+			baseConfigurationReference = 074604D053091B6C7A510DABA28EF2DA /* CommonApp.release.xcconfig */;
 			buildSettings = {
 				CLANG_ENABLE_OBJC_WEAK = NO;
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
@@ -634,11 +655,11 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		AC55FBB4E34E376FA5530904948B6BC0 /* Build configuration list for PBXNativeTarget "CommonApp" */ = {
+		692C29CDE675AD284DA2F9C20F0669B0 /* Build configuration list for PBXNativeTarget "CommonApp" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				CCC79F0819D26AFFDE708E2DFB9DD3A9 /* Debug */,
-				CEF227D804E280BA844BB55153932DA3 /* Release */,
+				3EAA76D8759D26E05B3CEFDBD116E0CA /* Debug */,
+				FDAA5D313EA95D3D7FAD2E5B1363E815 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

@@ -22,9 +22,6 @@ public class NewAppIntegrationLayer: IntegrationLayerProtocol {
         IntegrationLayer_registerViewController(storyboard: UIStoryboard(name: "NewsletterStoryboard", bundle: bundle),
                                                 viewControllerIdentifier: "NewsletterViewController",
                                                 identifier: "Newsletter")
-        
-        // Register NewsletterManager Model
-        IntegrationLayer_register(model: "NewApp.NewsletterManager", identifier: "NewAppNewsletterManager")
     }
     
 }

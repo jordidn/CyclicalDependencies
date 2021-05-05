@@ -18,6 +18,9 @@ public class OldAppIntegrationLayer: IntegrationLayerProtocol {
         IntegrationLayer_registerViewController(storyboard: UIStoryboard(name: "LoginStoryboard", bundle: bundle),
                                                 viewControllerIdentifier: "LoginViewController",
                                                 identifier: "Login")
+        
+        // Register OldNewsletterManager Model
+        IntegrationLayer_register(model: "OldApp.OldNewsletterManager", identifier: "OldNewsletterManager")
     }
     
 }

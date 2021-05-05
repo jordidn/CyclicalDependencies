@@ -9,6 +9,9 @@
 /* Begin PBXBuildFile section */
 		8631B239FFFEA4F7B1CCF0B6 /* Pods_CommonApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 87B8DE2483BE22926C5D046D /* Pods_CommonApp.framework */; };
 		AF5AC0D4263BF8DB00FB5C5D /* CMLogin.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF5AC0D3263BF8DB00FB5C5D /* CMLogin.swift */; };
+		AF82E0CC2642C27900DD1B21 /* CMNewsletter.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF82E0CB2642C27900DD1B21 /* CMNewsletter.swift */; };
+		AF82E0CF2642C2B000DD1B21 /* IntegrationLayerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF82E0CE2642C2B000DD1B21 /* IntegrationLayerViewController.swift */; };
+		AF82E0D22642C2C000DD1B21 /* IntegrationLayerModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF82E0D12642C2C000DD1B21 /* IntegrationLayerModel.swift */; };
 		AFD472D2263AF36F0038BD85 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFD472D1263AF36F0038BD85 /* AppDelegate.swift */; };
 		AFD472D4263AF3700038BD85 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFD472D3263AF3700038BD85 /* SceneDelegate.swift */; };
 		AFD472D6263AF3700038BD85 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFD472D5263AF3700038BD85 /* ViewController.swift */; };
@@ -23,6 +26,9 @@
 		4687B5B351E1CC0E700D8EB3 /* Pods-CommonApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CommonApp.release.xcconfig"; path = "Target Support Files/Pods-CommonApp/Pods-CommonApp.release.xcconfig"; sourceTree = "<group>"; };
 		87B8DE2483BE22926C5D046D /* Pods_CommonApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CommonApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		AF5AC0D3263BF8DB00FB5C5D /* CMLogin.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CMLogin.swift; sourceTree = "<group>"; };
+		AF82E0CB2642C27900DD1B21 /* CMNewsletter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CMNewsletter.swift; sourceTree = "<group>"; };
+		AF82E0CE2642C2B000DD1B21 /* IntegrationLayerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IntegrationLayerViewController.swift; sourceTree = "<group>"; };
+		AF82E0D12642C2C000DD1B21 /* IntegrationLayerModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IntegrationLayerModel.swift; sourceTree = "<group>"; };
 		AFD472CE263AF36F0038BD85 /* CommonApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CommonApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		AFD472D1263AF36F0038BD85 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		AFD472D3263AF3700038BD85 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -68,6 +74,7 @@
 		AF5AC0D0263BF8B600FB5C5D /* Features */ = {
 			isa = PBXGroup;
 			children = (
+				AF82E0CA2642C26900DD1B21 /* CommonNewsletter */,
 				AF5AC0D2263BF8BC00FB5C5D /* CommonLogin */,
 			);
 			path = Features;
@@ -79,6 +86,14 @@
 				AF5AC0D3263BF8DB00FB5C5D /* CMLogin.swift */,
 			);
 			path = CommonLogin;
+			sourceTree = "<group>";
+		};
+		AF82E0CA2642C26900DD1B21 /* CommonNewsletter */ = {
+			isa = PBXGroup;
+			children = (
+				AF82E0CB2642C27900DD1B21 /* CMNewsletter.swift */,
+			);
+			path = CommonNewsletter;
 			sourceTree = "<group>";
 		};
 		AFD472C5263AF36F0038BD85 = {
@@ -120,6 +135,8 @@
 			isa = PBXGroup;
 			children = (
 				AFD472EA263AF8490038BD85 /* IntegrationLayer.swift */,
+				AF82E0CE2642C2B000DD1B21 /* IntegrationLayerViewController.swift */,
+				AF82E0D12642C2C000DD1B21 /* IntegrationLayerModel.swift */,
 			);
 			path = IntegrationLayer;
 			sourceTree = "<group>";
@@ -221,10 +238,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AF82E0D22642C2C000DD1B21 /* IntegrationLayerModel.swift in Sources */,
 				AFD472D6263AF3700038BD85 /* ViewController.swift in Sources */,
 				AFD472EB263AF8490038BD85 /* IntegrationLayer.swift in Sources */,
+				AF82E0CF2642C2B000DD1B21 /* IntegrationLayerViewController.swift in Sources */,
 				AFD472D2263AF36F0038BD85 /* AppDelegate.swift in Sources */,
 				AF5AC0D4263BF8DB00FB5C5D /* CMLogin.swift in Sources */,
+				AF82E0CC2642C27900DD1B21 /* CMNewsletter.swift in Sources */,
 				AFD472D4263AF3700038BD85 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

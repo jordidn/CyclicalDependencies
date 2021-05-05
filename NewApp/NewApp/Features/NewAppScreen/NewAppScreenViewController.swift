@@ -10,6 +10,12 @@ import CommonApp
 
 class NewAppScreenViewController: UIViewController {
 
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        self.title = "NewApp"
+    }
+    
+    
     @IBAction func openOldAppProcessButtonAction(_ sender: Any) {
         // Login only Exists in 'OldApp'
         IntegrationLayer_recoverViewController(identifier: "Login") { viewController in

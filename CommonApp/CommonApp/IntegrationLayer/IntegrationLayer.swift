@@ -16,66 +16,6 @@ public protocol IntegrationLayerProtocol: class {
 }
 
 
-
-// MARK: - ViewController Management
-
-public func IntegrationLayer_registerViewController(storyboard: UIStoryboard, viewControllerIdentifier: String, identifier: String) {
-    let controller = ILController(storyboard: storyboard, viewControllerIdentifier: viewControllerIdentifier, identifier: identifier)
-    IntegrationLayer.shared.addController(controller: controller)
-}
-
-public func IntegrationLayer_recoverViewController(identifier: String, success: (UIViewController) -> Void, failure: ((Error) -> Void)? = nil) {
-    guard let controller = IntegrationLayer.shared.getController(byIdentifier: identifier) else {
-        failure?(CommonError.controllerNotExists)
-        return
-    }
-    
-    guard let viewController = controller.viewControler else {
-        failure?(CommonError.viewControllerIdentifierNotExists)
-        return
-    }
-    
-    success(viewController)
-}
-
-
-
-// MARK: - Models Management
-
-/// Model format: "projectName.className"
-public func IntegrationLayer_register(model: String, identifier: String) {
-    let model = ILModel(modelIdentifier: model, identifier: identifier)
-    IntegrationLayer.shared.addModel(model: model)
-}
-
-public func IntegrationLayer_recoverModel(identifier: String, success: (AnyClass) -> Void, failure: ((Error) -> Void)? = nil) {
-    guard let model = IntegrationLayer.shared.getModel(byIdentifier: identifier) else {
-        failure?(CommonError.modelNotExists)
-        return
-    }
-    
-    guard let modelClass = model.modelClass else {
-        failure?(CommonError.modelIdentifierNotExists)
-        return
-    }
-    
-    success(modelClass)
-}
-
-
-
-// MARK: - Errors
-
-public enum CommonError: Error {
-    case controllerNotExists
-    case viewControllerIdentifierNotExists
-    
-    case modelNotExists
-    case modelIdentifierNotExists
-}
-
-
-
 // MARK: - Internal classes
 
 internal class IntegrationLayer {
@@ -111,23 +51,12 @@ internal class IntegrationLayer {
 
 
 
-// MARK: - Integration Layer models
+// MARK: - Errors
 
-internal struct ILController {
-    let storyboard: UIStoryboard
-    let viewControllerIdentifier: String
-    let identifier: String
+public enum CommonError: Error {
+    case controllerNotExists
+    case viewControllerIdentifierNotExists
     
-    var viewControler: UIViewController? {
-        return storyboard.instantiateViewController(identifier: viewControllerIdentifier)
-    }
-}
-
-internal struct ILModel {
-    let modelIdentifier: String
-    let identifier: String
-    
-    var modelClass: AnyClass? {
-        return NSClassFromString(modelIdentifier)
-    }
+    case modelNotExists
+    case modelIdentifierNotExists
 }

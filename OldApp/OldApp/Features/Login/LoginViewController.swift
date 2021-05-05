@@ -9,7 +9,7 @@ import UIKit
 import CommonApp
 
 
-class LoginViewController: UIViewController {
+class LoginViewController: UIViewController, CMLoginProtocol {
     
     // MARK: - IBOutlets
     
@@ -42,6 +42,8 @@ class LoginViewController: UIViewController {
     // MARK: - Private methods
     
     private func addPropertiesToStackViewIfNeeded() {
+        self.title = types != nil || loginModel != nil ? "NewApp" : "OldApp"
+        
         // Login Types
         let textLabel = UILabel()
         textLabel.text = "LoginTypes: \(types?.map({ $0.rawValue }).joined(separator: ", ") ?? "nil")"
@@ -50,13 +52,8 @@ class LoginViewController: UIViewController {
         self.stackView.addArrangedSubview(textLabel)
     }
     
-}
-
-
-
-// MARK: - CMLoginProtocol implementation
-
-extension LoginViewController: CMLoginProtocol {
+    
+    // MARK: - CMLoginProtocol implementation
     
     func setLoginTypes(types: [CMLoginType]) {
         self.types = types

@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		781D2B16929B044805E94401 /* Pods_OldApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 58E17D02257A4CAFF770823C /* Pods_OldApp.framework */; };
+		AF82E0BD2642AFDC00DD1B21 /* OldNewsletterManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF82E0BC2642AFDC00DD1B21 /* OldNewsletterManager.swift */; };
 		AFD4727C263AE8B30038BD85 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFD4727B263AE8B30038BD85 /* AppDelegate.swift */; };
 		AFD4727E263AE8B30038BD85 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFD4727D263AE8B30038BD85 /* SceneDelegate.swift */; };
 		AFD47280263AE8B30038BD85 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFD4727F263AE8B30038BD85 /* ViewController.swift */; };
@@ -24,6 +25,7 @@
 		5296E999C77282B0F12FD868 /* Pods-OldApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OldApp.release.xcconfig"; path = "Target Support Files/Pods-OldApp/Pods-OldApp.release.xcconfig"; sourceTree = "<group>"; };
 		5662FD460ADDF2A41698E3D4 /* Pods-OldApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OldApp.debug.xcconfig"; path = "Target Support Files/Pods-OldApp/Pods-OldApp.debug.xcconfig"; sourceTree = "<group>"; };
 		58E17D02257A4CAFF770823C /* Pods_OldApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_OldApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		AF82E0BC2642AFDC00DD1B21 /* OldNewsletterManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OldNewsletterManager.swift; sourceTree = "<group>"; };
 		AFD47278263AE8B30038BD85 /* OldApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = OldApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		AFD4727B263AE8B30038BD85 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		AFD4727D263AE8B30038BD85 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -56,6 +58,14 @@
 				58E17D02257A4CAFF770823C /* Pods_OldApp.framework */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		AF82E0BB2642AFBF00DD1B21 /* OldNewsletter */ = {
+			isa = PBXGroup;
+			children = (
+				AF82E0BC2642AFDC00DD1B21 /* OldNewsletterManager.swift */,
+			);
+			path = OldNewsletter;
 			sourceTree = "<group>";
 		};
 		AFD4726F263AE8B30038BD85 = {
@@ -104,6 +114,7 @@
 		AFD47351263B15C90038BD85 /* Features */ = {
 			isa = PBXGroup;
 			children = (
+				AF82E0BB2642AFBF00DD1B21 /* OldNewsletter */,
 				AFD47352263B15CF0038BD85 /* Login */,
 			);
 			path = Features;
@@ -243,6 +254,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AF82E0BD2642AFDC00DD1B21 /* OldNewsletterManager.swift in Sources */,
 				AFD47343263B10C20038BD85 /* OldAppIntegrationLayer.swift in Sources */,
 				AFD47280263AE8B30038BD85 /* ViewController.swift in Sources */,
 				AFD4727C263AE8B30038BD85 /* AppDelegate.swift in Sources */,

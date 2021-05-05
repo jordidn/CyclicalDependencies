@@ -12,7 +12,7 @@ class ViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
+        self.title = "OldApp"
     }
 
     @IBAction func openNewAppButtonAction(_ sender: Any) {
